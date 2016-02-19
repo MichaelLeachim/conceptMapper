@@ -1,0 +1,13 @@
+
+module Settings {
+    
+    var _a = "@"
+    export var TAG_REG_EXP = RegExp(`${_a}[^${_a}]+`)
+    export var FIRST_NODE_WITHOUT_TAGS = RegExp(`^[^${_a}]*`)
+    export var TAG_IN_DATA = RegExp(`{}+[A-zА-я0-9-_]+`)
+    export var DATA_IN_OMNIBOX = RegExp(`(:?^|\s){1}[A-zА-я0-9-_]+`)
+    export var STRIP_HTML = RegExp(`<[^>]*?>`)
+    export var PLAIN_TEXT = RegExp(`[A-zА-я0-9_-]+`)
+    
+    
+}
